@@ -1,10 +1,12 @@
 import "./App.css";
+import InfiniteScroll from "./components/infinite-scroll/InfinteScroll";
 import Timer from "./components/timer/Timer";
 
 function App() {
   return (
     <div>
-      <Timer />
+      {/* <Timer /> */}
+      <InfiniteScroll />
     </div>
   );
 }
