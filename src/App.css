@@ -1,0 +1,44 @@
+/* Css for Multiple Progress bar in a queue (Machine Coding/LLD) asked in the MMT SSE - 2 interview */
+
+.main-container {
+  width: 500px;
+}
+
+.progress-btn {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background: black;
+  color: white;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 20px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background: green;
+}
+
+/* controlling the css animation */
+.progress-bar.active {
+  animation: fillBar 2s linear forwards;
+}
+
+.progress-bar.completed {
+  width: 100%;
+}
+
+@keyframes fillBar {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
