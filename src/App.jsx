@@ -1,4 +1,5 @@
 import "./App.css";
+import AutoSaveText from "./components/auto-save-text/AutoSaveText";
 import InfiniteScrollOptimized from "./components/infinite-scroll/InfiniteScrollOptimized";
 import InfiniteScroll from "./components/infinite-scroll/InfinteScroll";
 import ProductExplorer from "./components/product-explorer/ProductExplorer";
@@ -14,7 +15,8 @@ function App() {
       {/* <InfiniteScrollOptimized /> */}
       {/* <ToDo /> */}
       {/* <ProgressBarsQ /> */}
-      <ProductExplorer />
+      {/* <ProductExplorer /> */}
+      <AutoSaveText />
     </div>
   );
 }
