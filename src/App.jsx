@@ -2,6 +2,7 @@ import "./App.css";
 import AutoSaveText from "./components/auto-save-text/AutoSaveText";
 import InfiniteScrollOptimized from "./components/infinite-scroll/InfiniteScrollOptimized";
 import InfiniteScroll from "./components/infinite-scroll/InfinteScroll";
+import KanbanBoard from "./components/kanban-board/KanbanBoard";
 import ProductExplorer from "./components/product-explorer/ProductExplorer";
 import ProgressBarsQ from "./components/progress-bars-queue/ProgressBarsQ";
 import Timer from "./components/timer/Timer";
@@ -16,7 +17,8 @@ function App() {
       {/* <ToDo /> */}
       {/* <ProgressBarsQ /> */}
       {/* <ProductExplorer /> */}
-      <AutoSaveText />
+      {/* <AutoSaveText /> */}
+      <KanbanBoard />
     </div>
   );
 }
