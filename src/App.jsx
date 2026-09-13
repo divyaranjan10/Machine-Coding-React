@@ -5,6 +5,7 @@ import InfiniteScroll from "./components/infinite-scroll/InfinteScroll";
 import KanbanBoard from "./components/kanban-board/KanbanBoard";
 import ProductExplorer from "./components/product-explorer/ProductExplorer";
 import ProgressBarsQ from "./components/progress-bars-queue/ProgressBarsQ";
+import SearchOptions from "./components/searchable-dropdown/SearchOptions";
 import Timer from "./components/timer/Timer";
 import ToDo from "./components/to-do-list/ToDo";
 
@@ -18,7 +19,8 @@ function App() {
       {/* <ProgressBarsQ /> */}
       {/* <ProductExplorer /> */}
       {/* <AutoSaveText /> */}
-      <KanbanBoard />
+      {/* <KanbanBoard /> */}
+      <SearchOptions />
     </div>
   );
 }
