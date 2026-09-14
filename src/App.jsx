@@ -19,8 +19,8 @@ function App() {
       {/* <ProgressBarsQ /> */}
       {/* <ProductExplorer /> */}
       {/* <AutoSaveText /> */}
-      {/* <KanbanBoard /> */}
-      <SearchOptions />
+      <KanbanBoard />
+      {/* <SearchOptions /> */}
     </div>
   );
 }
