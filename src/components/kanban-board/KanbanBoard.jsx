@@ -50,7 +50,6 @@ const KanbanBoard = () => {
   };
 
   const saveTitle = (id, newTitle) => {
-    setIsEditing(true);
     setTasks((prev) =>
       prev.map((task) =>
         task.id === id ? { ...task, title: newTitle } : task,
@@ -64,7 +63,7 @@ const KanbanBoard = () => {
 
   const [tasks, setTasks] = useState([]);
 
-  const [isEditing, setIsEditing] = useState(false);
+  const [editingId, setEditingId] = useState(null);
 
   return (
     <div>
@@ -96,8 +95,8 @@ const KanbanBoard = () => {
                   moveTask={moveTask}
                   deleteTask={deleteTask}
                   saveTitle={saveTitle}
-                  isEditing={isEditing}
-                  setIsEditing={setIsEditing}
+                  isEditing={editingId === task.id}
+                  setIsEditing={setEditingId}
                 />
               ))}
           </div>

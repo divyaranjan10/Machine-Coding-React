@@ -12,7 +12,7 @@ const Task = ({
 
   const handleSave = () => {
     saveTitle(task.id, updatedText);
-    setIsEditing(false);
+    setIsEditing(null);
   };
 
   return (
@@ -34,7 +34,13 @@ const Task = ({
       )}
       <button
         className="bg-yellow-200 p-1 m-1"
-        onClick={() => saveTitle(task.id, updatedText)}
+        onClick={() => {
+          if (isEditing) {
+            handleSave();
+          } else {
+            setIsEditing(task.id);
+          }
+        }}
       >
         {isEditing ? "Save" : "Edit"}
       </button>
