@@ -8,6 +8,7 @@ import ProgressBarsQ from "./components/progress-bars-queue/ProgressBarsQ";
 import SearchOptions from "./components/searchable-dropdown/SearchOptions";
 import Timer from "./components/timer/Timer";
 import ToDo from "./components/to-do-list/ToDo";
+import TrafficLight from "./components/traffic-light/TrafficLight";
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
       {/* <ProgressBarsQ /> */}
       {/* <ProductExplorer /> */}
       {/* <AutoSaveText /> */}
-      <KanbanBoard />
+      {/* <KanbanBoard /> */}
       {/* <SearchOptions /> */}
+      <TrafficLight />
     </div>
   );
 }
