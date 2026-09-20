@@ -6,6 +6,7 @@ import KanbanBoard from "./components/kanban-board/KanbanBoard";
 import ProductExplorer from "./components/product-explorer/ProductExplorer";
 import ProgressBarsQ from "./components/progress-bars-queue/ProgressBarsQ";
 import SearchOptions from "./components/searchable-dropdown/SearchOptions";
+import MainContainer from "./components/stacked-snackbars/MainContainer";
 import Timer from "./components/timer/Timer";
 import ToDo from "./components/to-do-list/ToDo";
 import TrafficLight from "./components/traffic-light/TrafficLight";
@@ -22,7 +23,8 @@ function App() {
       {/* <AutoSaveText /> */}
       {/* <KanbanBoard /> */}
       {/* <SearchOptions /> */}
-      <TrafficLight />
+      {/* <TrafficLight /> */}
+      <MainContainer />
     </div>
   );
 }
