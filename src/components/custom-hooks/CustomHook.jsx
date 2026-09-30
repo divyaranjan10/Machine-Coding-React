@@ -1,23 +1,18 @@
 import { useFetch } from "./useFetch/useFetch";
+import { useLocalStorage } from "./useLocalStorage/useLocalStorage";
 
 const CustomHook = () => {
-  const { loading, data, error } = useFetch(
-    "https://jsonplaceholder.typicode.com/users",
-  );
-
-  if (loading) {
-    return <div>Loading Data...</div>;
-  }
-
-  if (error) {
-    return <div>Something went wrong</div>;
-  }
+  const [name, setName] = useLocalStorage("name", "dp");
 
   return (
     <div>
-      {data?.map((user) => (
-        <div key={user.id}>{user.name}</div>
-      ))}
+      <input
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        placeholder="Enter your name"
+      />
+
+      <h2>Hello {name}</h2>
     </div>
   );
 };
