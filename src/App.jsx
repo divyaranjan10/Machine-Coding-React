@@ -12,6 +12,7 @@ import ToDo from "./components/to-do-list/ToDo";
 import TrafficLight from "./components/traffic-light/TrafficLight";
 import VirtualisedList from "./components/virtualised-list/VirtualisedList";
 import CustomHook from "./components/custom-hooks/CustomHook";
+import PrintTable from "./components/print-table/PrintTable";
 
 const LIST = Array.from({ length: 10000 }, (_, index) => index + 1);
 
@@ -30,7 +31,8 @@ function App() {
       {/* <TrafficLight /> */}
       {/* <MainContainer /> */}
       {/* <VirtualisedList list={LIST} height={500} width={200} itemHeight={35} /> */}
-      <CustomHook />
+      {/* <CustomHook /> */}
+      <PrintTable />
     </div>
   );
 }
