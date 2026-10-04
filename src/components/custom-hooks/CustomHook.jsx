@@ -1,18 +1,16 @@
+import { useCounter } from "./useCounter/useCounter";
 import { useFetch } from "./useFetch/useFetch";
 import { useLocalStorage } from "./useLocalStorage/useLocalStorage";
 
 const CustomHook = () => {
-  const [name, setName] = useLocalStorage("name", "dp");
+  const { count, increment, decrement, reset } = useCounter(25);
 
   return (
     <div>
-      <input
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Enter your name"
-      />
-
-      <h2>Hello {name}</h2>
+      <div>{count}</div>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+      <button onClick={reset}>Reset</button>
     </div>
   );
 };
