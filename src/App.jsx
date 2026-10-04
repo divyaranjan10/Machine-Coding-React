@@ -31,8 +31,8 @@ function App() {
       {/* <TrafficLight /> */}
       {/* <MainContainer /> */}
       {/* <VirtualisedList list={LIST} height={500} width={200} itemHeight={35} /> */}
-      {/* <CustomHook /> */}
-      <PrintTable />
+      <CustomHook />
+      {/* <PrintTable /> */}
     </div>
   );
 }
