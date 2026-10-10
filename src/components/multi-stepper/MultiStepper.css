@@ -1,0 +1,30 @@
+.stepper {
+  display: flex;
+  padding: 20px;
+}
+
+.stepper-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+}
+
+.stepper button {
+  background-color: lightblue;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.stepper-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: orange;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
