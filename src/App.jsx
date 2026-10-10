@@ -15,6 +15,7 @@ import CustomHook from "./components/custom-hooks/CustomHook";
 import PrintTable from "./components/print-table/PrintTable";
 import TimerCred from "./components/timer-credgenics/TimerCred";
 import SearchPage from "./components/search-pagination/SearchPage";
+import MultiStepper from "./components/multi-stepper/MultiStepper";
 
 const LIST = Array.from({ length: 10000 }, (_, index) => index + 1);
 
@@ -36,7 +37,8 @@ function App() {
       {/* <CustomHook /> */}
       {/* <PrintTable /> */}
       {/* <TimerCred /> */}
-      <SearchPage />
+      {/* <SearchPage /> */}
+      <MultiStepper />
     </div>
   );
 }
