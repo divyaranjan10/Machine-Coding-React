@@ -17,6 +17,7 @@ import TimerCred from "./components/timer-credgenics/TimerCred";
 import SearchPage from "./components/search-pagination/SearchPage";
 import MultiStepper from "./components/multi-stepper/MultiStepper";
 import LoginPage from "./components/google-login/LoginPage";
+import LinkedinProfile from "./components/linkedin-profile/LinkedinProfile";
 
 const LIST = Array.from({ length: 10000 }, (_, index) => index + 1);
 
@@ -40,7 +41,8 @@ function App() {
       {/* <TimerCred /> */}
       {/* <SearchPage /> */}
       {/* <MultiStepper /> */}
-      <LoginPage />
+      {/* <LoginPage /> */}
+      <LinkedinProfile />
     </div>
   );
 }
