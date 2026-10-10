@@ -16,6 +16,7 @@ import PrintTable from "./components/print-table/PrintTable";
 import TimerCred from "./components/timer-credgenics/TimerCred";
 import SearchPage from "./components/search-pagination/SearchPage";
 import MultiStepper from "./components/multi-stepper/MultiStepper";
+import LoginPage from "./components/google-login/LoginPage";
 
 const LIST = Array.from({ length: 10000 }, (_, index) => index + 1);
 
@@ -38,7 +39,8 @@ function App() {
       {/* <PrintTable /> */}
       {/* <TimerCred /> */}
       {/* <SearchPage /> */}
-      <MultiStepper />
+      {/* <MultiStepper /> */}
+      <LoginPage />
     </div>
   );
 }
