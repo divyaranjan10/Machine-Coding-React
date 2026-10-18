@@ -21,6 +21,7 @@ import LinkedinProfile from "./components/linkedin-profile/LinkedinProfile";
 import DataTable from "./components/data-table/DataTable";
 import LanguageToggle from "./components/language-toggle/LanguageToggle";
 import ContactPage from "./components/phone-book/ContactPage";
+import CustomDebounce from "./components/custom-hooks/useDebounce/CustomDebounce";
 
 const LIST = Array.from({ length: 10000 }, (_, index) => index + 1);
 
@@ -48,7 +49,8 @@ function App() {
       {/* <LinkedinProfile /> */}
       {/* <DataTable /> */}
       {/* <LanguageToggle /> */}
-      <ContactPage />
+      {/* <ContactPage /> */}
+      <CustomDebounce />
     </div>
   );
 }
