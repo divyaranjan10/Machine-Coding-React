@@ -18,6 +18,7 @@ import SearchPage from "./components/search-pagination/SearchPage";
 import MultiStepper from "./components/multi-stepper/MultiStepper";
 import LoginPage from "./components/google-login/LoginPage";
 import LinkedinProfile from "./components/linkedin-profile/LinkedinProfile";
+import DataTable from "./components/data-table/DataTable";
 
 const LIST = Array.from({ length: 10000 }, (_, index) => index + 1);
 
@@ -42,7 +43,8 @@ function App() {
       {/* <SearchPage /> */}
       {/* <MultiStepper /> */}
       {/* <LoginPage /> */}
-      <LinkedinProfile />
+      {/* <LinkedinProfile /> */}
+      <DataTable />
     </div>
   );
 }
