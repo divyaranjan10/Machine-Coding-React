@@ -19,6 +19,7 @@ import MultiStepper from "./components/multi-stepper/MultiStepper";
 import LoginPage from "./components/google-login/LoginPage";
 import LinkedinProfile from "./components/linkedin-profile/LinkedinProfile";
 import DataTable from "./components/data-table/DataTable";
+import LanguageToggle from "./components/language-toggle/LanguageToggle";
 
 const LIST = Array.from({ length: 10000 }, (_, index) => index + 1);
 
@@ -44,7 +45,8 @@ function App() {
       {/* <MultiStepper /> */}
       {/* <LoginPage /> */}
       {/* <LinkedinProfile /> */}
-      <DataTable />
+      {/* <DataTable /> */}
+      <LanguageToggle />
     </div>
   );
 }
